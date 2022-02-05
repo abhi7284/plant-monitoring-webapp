@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+
+
+<body>
+
+
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js';
+  import { getFirestore, collection, getDocs } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore-lite.js';
+  import { getDatabase, ref, push, set } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js';
+
+  const firebaseConfig = {
+      apiKey: "AIzaSyBRE_g48ghgv9bIS4nMknpK8yty4ksJqVg",
+      authDomain: "lilly-d795c.firebaseapp.com",
+      projectId: "lilly-d795c",
+      storageBucket: "lilly-d795c.appspot.com",
+      messagingSenderId: "944261728890",
+      appId: "1:944261728890:web:1bb93c4838dc8f3a3589c3",
+      measurementId: "G-5HZ16L2F7D"
+    };  
+      
+  async function getData(db) {
+  const statusCol = collection(db, 'status');
+  const statusSnapshot = await getDocs(statusCol);
+  const statusList = statusSnapshot.docs.map(doc => doc.data());
+  console.log(statusList)
+
+  }
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  getData(db)
+
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Lilly - Dashboard</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/logo.png"  class="mr-2"
+            alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.png" alt="logo" /></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown mr-4">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+              data-toggle="dropdown">
+              <i class="icon-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+
+          </li>
+          <li class="nav-item nav-profile dropdown mr-4">
+            <a class="nav-link dropdown-toggle" href="#">
+              <img class="border border" src="./images/p3.png" alt="profile" />
+            </a>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex ">
+            <a class="nav-link  rounded" href="./login.html">
+              <i class="ti-power-off mx-2 text-danger"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#reports" aria-expanded="false" aria-controls="reports">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">Reports</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="reports">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./humidity.html">Humidity</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./temperature.html">Temperature</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./moisture.html">Moisture</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./insert_data.html">
+              <i class="icon-plus menu-icon"></i>
+              <span class="menu-title">Add Data</span>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="./about_us.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">About Us</span>
+            </a>
+          </li>
+          
+
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">Welcome Back</h3>
+                  <h6 class="font-weight-normal mb-0">All systems are running <span
+                      class="text-success">smoothly!</span></h6>
+                </div>
+
+                <div class="col-12 col-xl-4">
+                  <div class="justify-content-end d-flex">
+                    <div class="text-primary flex-md-grow-1 flex-xl-grow-0" id="today-date">
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card tale-bg">
+                <div class="card rounded mt-auto">
+                  <img class="rounded" src="images/plants1.jpg" alt="people">
+                  <div class="weather-info">
+                    <div class="d-flex">
+                      <div>
+                        <h2 class="mb-0 font-weight-normal text-white "><i class="icon-sun mr-2"></i>31<sup>C</sup></h2>
+                      </div>
+                      <div class="ml-2">
+                        <h4 class="location font-weight-normal text-white">Bhubaneswar</h4>
+                        <h6 class="font-weight-normal text-white">India</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin transparent">
+              <div class="row">
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      <h4 class="mb-4">Humidity</h4>
+                      <p class="fs-30 mb-2" id="avg-humidity"></p>
+                      <p>(avg-7 days) </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-dark-blue">
+                    <div class="card-body">
+                      <h4 class="mb-4">Temperature</h4>
+                      <p class="fs-30 mb-2" id="avg-temp"></p>
+                      <p>(avg-7 days) </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-lg-0 mx-auto stretch-card transparent">
+                  <div class="card card-light-blue">
+                    <div class="card-body">
+                      <h4 class="mb-4">Moisture</h4>
+                      <p class="fs-30 mb-2" id="avg-moisture"></p>
+                      <p>(avg-7 days) </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title text-center">#Last 10 Status Records</h4>
+                  <div class="table-responsive ">
+                    <table class="table table-bordered text-center">
+                      <thead>
+                        <tr>
+                          <th>
+                            #
+                          </th>
+                          <th>
+                            Date-Time
+                          </th>
+                          <th>
+                            Humidity
+                          </th>
+                          <th>
+                            Temperature
+                          </th>
+                          <th>
+                            Moisture
+                          </th>
+
+                        </tr>
+                      </thead>
+                      <tbody id="status-data">
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card position-relative">
+                <div class="card-body">
+                  <div id="detailedReports" class="carousel slide detailed-report-carousel position-static pt-2"
+                    data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+
+                        <div class="row">
+
+                          <div class="col-md-12 col-xl-4 d-flex flex-column justify-content-start">
+                            <div class="ml-3 mt-3">
+                              <p class="card-title">Detailed Reports</p>
+                              <h2 class="text-primary">Humidity</h2>
+                              <h4 class="font-weight-500 mb-xl-4 text-primary get-current-time"></h4>
+                              <p class="mb-2 mb-xl-0">The ideal humidity for houseplants is 40-60% higher than the
+                                humidity levels found in our homes, especially during the winter when fireplaces and
+                                furnaces create drier air conditions.</p>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12 col-xl-8">
+                            <div class="row">
+                              <div class="col-md-8 border-right">
+                                <div class="table-responsive mb-3 mb-md-0 mt-3">
+                                  <table class="table table-borderless report-table" id="detail-report-humidity">
+
+                                  </table>
+                                </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                <h4 class="card-title text-primary mt-5">How to increase the humidity for your plants
+                                </h4>
+                                <ul>
+                                  <li>Mist your plants</li>
+                                  <li>Give them a bath</li>
+                                  <li>Place plants in more humid rooms</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="carousel-item ">
+                        <div class="row">
+                          <div class="col-md-12 col-xl-4 d-flex flex-column justify-content-start">
+                            <div class="ml-3 mt-3">
+                              <p class="card-title">Detailed Reports</p>
+                              <h2 class="text-primary">Temperature</h2>
+                              <h4 class="font-weight-500 mb-xl-4 text-primary get-current-time"></h4>
+                              <p class="mb-2 mb-xl-0">In general, foliage plants grow best between 70 degrees and 80
+                                degrees F.
+                                during the day and between 60 degrees to 68 degrees F. at night. </p>
+                            </div>
+                          </div>
+
+                          <div class=" col-md-12 col-xl-8">
+                            <div class="row">
+                              <div class="col-md-8 border-right">
+                                <div class="table-responsive mb-3 mb-md-0 mt-3">
+                                  <table class="table table-borderless report-table" id="detail-report-temp">
+
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+
+                                <h4 class="card-title text-primary mt-5">Temperature on Growth</h4>
+                                <p>Most flowering plants
+                                  prefer the same daytime temperature range, but grow best when nighttime temperatures
+                                  range from 55 degrees to 60 degrees Fc</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item ">
+                        <div class="row">
+
+                          <div class="col-md-12 col-xl-4 d-flex flex-column justify-content-start">
+                            <div class="ml-3 mt-3">
+                              <p class="card-title">Detailed Reports</p>
+                              <h2 class="text-primary">Moisture</h2>
+                              <h4 class="font-weight-500 mb-xl-4 text-primary get-current-time"></h4>
+                              <p class="mb-2 mb-xl-0">Soil moisture, moderately coarse soil will do this at
+                                the 75-50% soil moisture range and medium soil will do
+                                this at the 50-25% soil moisture range</p>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12 col-xl-8">
+                            <div class="row">
+
+                              <div class="col-md-8 border-right">
+                                <div class="table-responsive mb-3 mb-md-0 mt-3">
+                                  <table class="table table-borderless report-table" id="detail-report-moisture">
+                                  </table>
+                                </div>
+                              </div>
+
+                              <div class="col-md-4">
+                                <h4 class="card-title text-primary mt-5">Moisture on Growth</h4>
+                                <p>After the seeds have germinated and started to grow,
+                                  however, it may be necessary to step up irrigation
+                                  to meet the levels of available moisture recommended</p>
+                              </div>
+                              <div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#detailedReports" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#detailedReports" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021. <a
+                href="#">The Lilly</a>
+              All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made for <i
+                class="mdi mdi-pine-tree text-danger ml-1"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js';
+    import { getFirestore, collection, getDocs } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore-lite.js';
+    const firebaseConfig = {
+        apiKey: "AIzaSyBRE_g48ghgv9bIS4nMknpK8yty4ksJqVg",
+        authDomain: "lilly-d795c.firebaseapp.com",
+        projectId: "lilly-d795c",
+        storageBucket: "lilly-d795c.appspot.com",
+        messagingSenderId: "944261728890",
+        appId: "1:944261728890:web:1bb93c4838dc8f3a3589c3",
+        measurementId: "G-5HZ16L2F7D"
+      };  
+        
+    async function getData(db) {
+    const statusCol = collection(db, 'status');
+    const statusSnapshot = await getDocs(statusCol);
+    const statusList = statusSnapshot.docs.map(doc => doc.data());
+
+//--------------------------------------------------------------------------------
+
+    var tr =  ''
+    var count = 1;
+    var x = 0 
+    var length = statusList.length;
+
+   var ts = "";
+   
+
+    length<10? x = statusList.length : x=10;
+       for(var i = length -1  ; i > length-11 ; i--){
+         ts = ((statusList[i]['time_stamp']).toDate()).toString().slice(3,25);
+        tr = tr + '<tr><td>'+count+'</td><td><label class="text px-3"> '+ts+' </label></td> <td><label class="text px-3"> '+statusList[i]["humidity"]+' </label></td><td><label class="text">'+statusList[i]['temperature']+'</label></td><td><label class="text">'+statusList[i]['moisture']+'</label></td></tr>'
+      count++; 
+      }     
+      $("#status-data").html(tr)
+
+    // ((statusList[0]['time_stamp']).toDate()).toString().slice(0,25)
+
+//--------------------------------------------------------------
+
+
+
+     var drh = '';
+     var n1 = 0;
+     var avg_humidity = 0;
+     var tsh ="";
+     var thm = 40;
+  for(var j = length-1 ; j > length-7 ; j--){
+
+    n1 = statusList[j]["humidity"];
+    avg_humidity +=parseInt(n1);
+    
+    if(n1>thm){
+    tsh = ((statusList[j]['time_stamp']).toDate()).toString().slice(3,25);
+       drh = drh + '<tr><td class="text-muted get-current-time">'+tsh+'</td><td class="w-100 px-0"><div class="progress progress-md mx-4"><div class="progress-bar bg-danger" role="progressbar" style="width:'+n1+'%" aria-valuenow="'+n1+'" aria-valuemin="0" aria-valuemax="100"></div></div></td></tr>';
+    }
+    else{
+    tsh = ((statusList[j]['time_stamp']).toDate()).toString().slice(3,25);
+       drh = drh + '<tr><td class="text-muted get-current-time">'+tsh+'</td><td class="w-100 px-0"><div class="progress progress-md mx-4"><div class="progress-bar bg-success" role="progressbar" style="width:'+n1+'%" aria-valuenow="'+n1+'" aria-valuemin="0" aria-valuemax="100"></div></div></td></tr>';
+  
+    }
+
+  }
+
+  $("#avg-humidity").html((avg_humidity/6).toFixed(2))
+  $("#detail-report-humidity").html(drh);
+
+//-------------------------------------------------------
+
+     var drt = '';
+     var n2 = 0;
+     var avg_temp = 0;
+     var tst = "";
+     var tht = 30;
+
+  for(var k = length-1 ; k>length-7  ; k--){
+
+    n2 = statusList[k]["temperature"];    
+    avg_temp +=parseInt(n2);
+
+    //if >60 condition here
+    if(n2 > tht){
+      tst = ((statusList[k]['time_stamp']).toDate()).toString().slice(3,25)
+       drt = drt + '<tr><td class="text-muted get-current-time">'+tst+'</td><td class="w-100 px-0"><div class="progress progress-md mx-4"><div class="progress-bar bg-danger" role="progressbar" style="width:'+n2+'%" aria-valuenow="'+n2+'" aria-valuemin="0" aria-valuemax="100"></div></div></td></tr>';
+  
+    }
+    else{
+      tst = ((statusList[k]['time_stamp']).toDate()).toString().slice(3,25)
+       drt = drt + '<tr><td class="text-muted get-current-time">'+tst+'</td><td class="w-100 px-0"><div class="progress progress-md mx-4"><div class="progress-bar bg-success" role="progressbar" style="width:'+n2+'%" aria-valuenow="'+n2+'" aria-valuemin="0" aria-valuemax="100"></div></div></td></tr>';
+  
+    }
+    
+  }
+  $("#avg-temp").html((avg_temp/6).toFixed(2))
+    $("#detail-report-temp").html(drt);
+
+//-----------------------------------------------------------
+
+    var drm = '';
+     var n3 = 0;
+     var avg_moisture=0;
+     var tsm = "";
+     var thm=20;
+
+  for(var l = length-1 ; l>length-7  ; l--){
+
+    n3 = statusList[l]["moisture"];
+    avg_moisture +=parseInt(n3);
+    //if >60 condition here
+    if (n3>thm){
+      tsm = ((statusList[l]['time_stamp']).toDate()).toString().slice(3,25)
+       drm = drm + '<tr><td class="text-muted get-current-time">'+tsm+'</td><td class="w-100 px-0"><div class="progress progress-md mx-4"><div class="progress-bar bg-danger" role="progressbar" style="width:'+n3+'%" aria-valuenow="'+n3+'" aria-valuemin="0" aria-valuemax="100"></div></div></td></tr>';
+  
+    }
+    else{
+      tsm = ((statusList[l]['time_stamp']).toDate()).toString().slice(3,25)
+       drm = drm + '<tr><td class="text-muted get-current-time">'+tsm+'</td><td class="w-100 px-0"><div class="progress progress-md mx-4"><div class="progress-bar bg-success" role="progressbar" style="width:'+n3+'%" aria-valuenow="'+n3+'" aria-valuemin="0" aria-valuemax="100"></div></div></td></tr>';
+  
+    }
+  
+  }
+  $("#avg-moisture").html((avg_moisture/6).toFixed(2))
+    $("#detail-report-moisture").html(drm);
+
+//-----------------------------------------------------------------
+
+
+
+
+    }
+
+
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    getData(db)
+  </script>
+
+
+
+  <script>
+    let today = new Date().toLocaleDateString()
+    $("#today-date").html(today)
+
+    $(".get-current-time").html(new Date().toLocaleTimeString())
+  </script>
+
+</body>
+
+</html>
