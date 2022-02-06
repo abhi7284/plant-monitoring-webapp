@@ -153,228 +153,238 @@
             </div>
             <div class="col-md-6 grid-margin transparent">
               <div class="row">
+
                 <div class="col-md-6 mb-4 stretch-card transparent">
+
                   <div class="card text-white" style="background-color: #96BB7C;">
-                    <div class="card-body">
-                      <h3 class="mb-3">Humidity</h3>
-                      <p class="fs-30 mb-1" id="avg-humidity"></p>
-                      <p>(avg-7 latest) </p>
-                    </div>
+                    <a href="./humidity.html" class="text-white" style="text-decoration: none;">
+                      <div class="card-body">
+                        <h3 class="mb-3">Humidity</h3>
+                        <p class="fs-30 mb-1" id="avg-humidity"></p>
+                        <p>(avg-7 latest) </p>
+                      </div>
+                    </a>
                   </div>
                 </div>
+
+
                 <div class="col-md-6 mb-4 stretch-card transparent">
                   <div class="card text-white" style="background-color:#9EDE73 ">
-                    <div class="card-body">
-                      <h3 class="mb-3">Temperature</h3>
-                      <p class="fs-30 mb-1" id="avg-temp"></p>
-                      <p>(avg-7 latest) </p>
-                    </div>
+                    <a href="./temperature.html" class="text-white" style="text-decoration: none;">
+                      <div class="card-body">
+                        <h3 class="mb-3">Temperature</h3>
+                        <p class="fs-30 mb-1" id="avg-temp"></p>
+                        <p>(avg-7 latest) </p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 mb-4 mb-lg-0 mx-auto stretch-card transparent">
-                  <div class="card text-white" style="background-color: #79af55;">
-                    <div class="card-body">
-                      <h3 class="mb-3">Moisture</h3>
-                      <p class="fs-30 mb-1" id="avg-moisture"></p>
-                      <p>(avg-7 latest) </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title text-center py-2">#Latest 10 Status Records</h4>
-                  <div class="table-responsive ">
-                    <table class="table table-bordered text-center">
-                      <thead>
-                        <tr>
-                          <th>
-                            #
-                          </th>
-                          <th>
-                            Date-Time
-                          </th>
-                          <th>
-                            Humidity
-                          </th>
-                          <th>
-                            Temperature
-                          </th>
-                          <th>
-                            Moisture
-                          </th>
-
-                        </tr>
-                      </thead>
-                      <tbody id="status-data">
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-          <div class="row">
-            <div class="col-md-12 grid-margin stretch-card">
-              <div class="card position-relative">
-                <div class="card-body">
-                  <div id="detailedReports" class="carousel slide detailed-report-carousel position-static pt-2"
-                    data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-
-                        <div class="row">
-
-                          <div class="col-md-12 col-xl-4 d-flex flex-column justify-content-start">
-                            <div class="ml-3 mt-3">
-                              <p class="card-title">Detailed Reports</p>
-                              <h2 class="text-primary">Humidity</h2>
-                              <h4 class="font-weight-500 mb-xl-4 text-primary get-current-time"></h4>
-                              <p class="mb-2 mb-xl-0">The ideal humidity for houseplants is 40-60% higher than the
-                                humidity levels found in our homes, especially during the winter when fireplaces and
-                                furnaces create drier air conditions.</p>
-                            </div>
-                          </div>
-
-                          <div class="col-md-12 col-xl-8">
-                            <div class="row">
-                              <div class="col-md-8 border-right">
-                                <div class="table-responsive mb-3 mb-md-0 mt-3">
-                                  <table class="table table-borderless report-table" id="detail-report-humidity">
-
-                                  </table>
-                                </div>
-                              </div>
-
-                              <div class="col-md-4">
-                                <h4 class="card-title text-primary mt-5">How to increase the humidity for your plants
-                                </h4>
-                                <ul>
-                                  <li>Mist your plants</li>
-                                  <li>Give them a bath</li>
-                                  <li>Place plants in more humid rooms</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-
+                  <a href="./moisture.html" class="text-white" style="text-decoration: none;">
+                    <div class="card text-white" style="background-color: #79af55;">
+                      <div class="card-body">
+                        <h3 class="mb-3">Moisture</h3>
+                        <p class="fs-30 mb-1" id="avg-moisture"></p>
+                        <p>(avg-7 latest) </p>
                       </div>
-
-                      <div class="carousel-item ">
-                        <div class="row">
-                          <div class="col-md-12 col-xl-4 d-flex flex-column justify-content-start">
-                            <div class="ml-3 mt-3">
-                              <p class="card-title">Detailed Reports</p>
-                              <h2 class="text-primary">Temperature</h2>
-                              <h4 class="font-weight-500 mb-xl-4 text-primary get-current-time"></h4>
-                              <p class="mb-2 mb-xl-0">In general, foliage plants grow best between 70 degrees and 80
-                                degrees F.
-                                during the day and between 60 degrees to 68 degrees F. at night. </p>
-                            </div>
-                          </div>
-
-                          <div class=" col-md-12 col-xl-8">
-                            <div class="row">
-                              <div class="col-md-8 border-right">
-                                <div class="table-responsive mb-3 mb-md-0 mt-3">
-                                  <table class="table table-borderless report-table" id="detail-report-temp">
-
-                                  </table>
-                                </div>
-                              </div>
-                              <div class="col-md-4">
-
-                                <h4 class="card-title text-primary mt-5">Temperature on Growth</h4>
-                                <p>Most flowering plants
-                                  prefer the same daytime temperature range, but grow best when nighttime temperatures
-                                  range from 55 degrees to 60 degrees Fc</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item ">
-                        <div class="row">
-
-                          <div class="col-md-12 col-xl-4 d-flex flex-column justify-content-start">
-                            <div class="ml-3 mt-3">
-                              <p class="card-title">Detailed Reports</p>
-                              <h2 class="text-primary">Moisture</h2>
-                              <h4 class="font-weight-500 mb-xl-4 text-primary get-current-time"></h4>
-                              <p class="mb-2 mb-xl-0">Soil moisture, moderately coarse soil will do this at
-                                the 75-50% soil moisture range and medium soil will do
-                                this at the 50-25% soil moisture range</p>
-                            </div>
-                          </div>
-
-                          <div class="col-md-12 col-xl-8">
-                            <div class="row">
-
-                              <div class="col-md-8 border-right">
-                                <div class="table-responsive mb-3 mb-md-0 mt-3">
-                                  <table class="table table-borderless report-table" id="detail-report-moisture">
-                                  </table>
-                                </div>
-                              </div>
-
-                              <div class="col-md-4">
-                                <h4 class="card-title text-primary mt-5">Moisture on Growth</h4>
-                                <p>After the seeds have germinated and started to grow,
-                                  however, it may be necessary to step up irrigation
-                                  to meet the levels of available moisture recommended</p>
-                              </div>
-                              <div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <a class="carousel-control-prev" href="#detailedReports" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#detailedReports" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
-        <footer class="footer">
-          <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021. <a
-                href="#">The Lilly</a>
-              All rights reserved.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made for <i
-                class="mdi mdi-pine-tree text-danger ml-1"></i></span>
+
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center py-2">#Latest 10 Status Records</h4>
+                <div class="table-responsive ">
+                  <table class="table table-bordered text-center">
+                    <thead>
+                      <tr>
+                        <th>
+                          #
+                        </th>
+                        <th>
+                          Date-Time
+                        </th>
+                        <th>
+                          Humidity
+                        </th>
+                        <th>
+                          Temperature
+                        </th>
+                        <th>
+                          Moisture
+                        </th>
+
+                      </tr>
+                    </thead>
+                    <tbody id="status-data">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
-        </footer>
-        <!-- partial -->
+
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12 grid-margin stretch-card">
+            <div class="card position-relative">
+              <div class="card-body">
+                <div id="detailedReports" class="carousel slide detailed-report-carousel position-static pt-2"
+                  data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                      <div class="row">
+
+                        <div class="col-md-12 col-xl-4 d-flex flex-column justify-content-start">
+                          <div class="ml-3 mt-3">
+                            <p class="card-title">Detailed Reports</p>
+                            <h2 class="text-primary">Humidity</h2>
+                            <h4 class="font-weight-500 mb-xl-4 text-primary get-current-time"></h4>
+                            <p class="mb-2 mb-xl-0">The ideal humidity for houseplants is 40-60% higher than the
+                              humidity levels found in our homes, especially during the winter when fireplaces and
+                              furnaces create drier air conditions.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12 col-xl-8">
+                          <div class="row">
+                            <div class="col-md-8 border-right">
+                              <div class="table-responsive mb-3 mb-md-0 mt-3">
+                                <table class="table table-borderless report-table" id="detail-report-humidity">
+
+                                </table>
+                              </div>
+                            </div>
+
+                            <div class="col-md-4">
+                              <h4 class="card-title text-primary mt-5">How to increase the humidity for your plants
+                              </h4>
+                              <ul>
+                                <li>Mist your plants</li>
+                                <li>Give them a bath</li>
+                                <li>Place plants in more humid rooms</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="carousel-item ">
+                      <div class="row">
+                        <div class="col-md-12 col-xl-4 d-flex flex-column justify-content-start">
+                          <div class="ml-3 mt-3">
+                            <p class="card-title">Detailed Reports</p>
+                            <h2 class="text-primary">Temperature</h2>
+                            <h4 class="font-weight-500 mb-xl-4 text-primary get-current-time"></h4>
+                            <p class="mb-2 mb-xl-0">In general, foliage plants grow best between 70 degrees and 80
+                              degrees F.
+                              during the day and between 60 degrees to 68 degrees F. at night. </p>
+                          </div>
+                        </div>
+
+                        <div class=" col-md-12 col-xl-8">
+                          <div class="row">
+                            <div class="col-md-8 border-right">
+                              <div class="table-responsive mb-3 mb-md-0 mt-3">
+                                <table class="table table-borderless report-table" id="detail-report-temp">
+
+                                </table>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+
+                              <h4 class="card-title text-primary mt-5">Temperature on Growth</h4>
+                              <p>Most flowering plants
+                                prefer the same daytime temperature range, but grow best when nighttime temperatures
+                                range from 55 degrees to 60 degrees Fc</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                      <div class="row">
+
+                        <div class="col-md-12 col-xl-4 d-flex flex-column justify-content-start">
+                          <div class="ml-3 mt-3">
+                            <p class="card-title">Detailed Reports</p>
+                            <h2 class="text-primary">Moisture</h2>
+                            <h4 class="font-weight-500 mb-xl-4 text-primary get-current-time"></h4>
+                            <p class="mb-2 mb-xl-0">Soil moisture, moderately coarse soil will do this at
+                              the 75-50% soil moisture range and medium soil will do
+                              this at the 50-25% soil moisture range</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12 col-xl-8">
+                          <div class="row">
+
+                            <div class="col-md-8 border-right">
+                              <div class="table-responsive mb-3 mb-md-0 mt-3">
+                                <table class="table table-borderless report-table" id="detail-report-moisture">
+                                </table>
+                              </div>
+                            </div>
+
+                            <div class="col-md-4">
+                              <h4 class="card-title text-primary mt-5">Moisture on Growth</h4>
+                              <p>After the seeds have germinated and started to grow,
+                                however, it may be necessary to step up irrigation
+                                to meet the levels of available moisture recommended</p>
+                            </div>
+                            <div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <a class="carousel-control-prev" href="#detailedReports" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#detailedReports" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- main-panel ends -->
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+      <footer class="footer">
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+          <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021. <a href="#">The
+              Lilly</a>
+            All rights reserved.</span>
+          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made for <i
+              class="mdi mdi-pine-tree text-danger ml-1"></i></span>
+        </div>
+      </footer>
+      <!-- partial -->
     </div>
-    <!-- page-body-wrapper ends -->
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
 
