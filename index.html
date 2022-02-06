@@ -28,7 +28,7 @@
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
         <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/logo.png"  class="mr-2"
-            alt="logo" /></a>
+            alt="logo" style="transform: scale(1.7);"/></a>
         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.png" alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -121,7 +121,7 @@
 
                 <div class="col-12 col-xl-4">
                   <div class="justify-content-end d-flex">
-                    <div class="text-primary flex-md-grow-1 flex-xl-grow-0" id="today-date">
+                    <div class="text-primary flex-md-grow-1 flex-xl-grow-0 font-weight-bold" id="today-date">
                     </div>
                   </div>
                 </div>
@@ -153,31 +153,31 @@
             <div class="col-md-6 grid-margin transparent">
               <div class="row">
                 <div class="col-md-6 mb-4 stretch-card transparent">
-                  <div class="card card-tale">
+                  <div class="card text-white" style="background-color: #96BB7C;">
                     <div class="card-body">
-                      <h4 class="mb-4">Humidity</h4>
-                      <p class="fs-30 mb-2" id="avg-humidity"></p>
-                      <p>(avg-7 days) </p>
+                      <h3 class="mb-3">Humidity</h3>
+                      <p class="fs-30 mb-1" id="avg-humidity"></p>
+                      <p>(avg-7 latest) </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4 stretch-card transparent">
-                  <div class="card card-dark-blue">
+                  <div class="card text-white" style="background-color:#9EDE73 ">
                     <div class="card-body">
-                      <h4 class="mb-4">Temperature</h4>
-                      <p class="fs-30 mb-2" id="avg-temp"></p>
-                      <p>(avg-7 days) </p>
+                      <h3 class="mb-3">Temperature</h3>
+                      <p class="fs-30 mb-1" id="avg-temp"></p>
+                      <p>(avg-7 latest) </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 mb-4 mb-lg-0 mx-auto stretch-card transparent">
-                  <div class="card card-light-blue">
+                  <div class="card text-white" style="background-color: #79af55;">
                     <div class="card-body">
-                      <h4 class="mb-4">Moisture</h4>
-                      <p class="fs-30 mb-2" id="avg-moisture"></p>
-                      <p>(avg-7 days) </p>
+                      <h3 class="mb-3">Moisture</h3>
+                      <p class="fs-30 mb-1" id="avg-moisture"></p>
+                      <p>(avg-7 latest) </p>
                     </div>
                   </div>
                 </div>
@@ -189,7 +189,7 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title text-center">#Last 10 Status Records</h4>
+                  <h4 class="card-title text-center py-2">#Latest 10 Status Records</h4>
                   <div class="table-responsive ">
                     <table class="table table-bordered text-center">
                       <thead>
@@ -541,9 +541,7 @@
 
 
   <script>
-    let today = new Date().toLocaleDateString()
-    $("#today-date").html(today)
-
+    $("#today-date").html(new Date().toLocaleDateString())
     $(".get-current-time").html(new Date().toLocaleTimeString())
   </script>
 
