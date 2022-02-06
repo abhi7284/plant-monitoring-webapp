@@ -254,21 +254,7 @@
     lab.push(y);
   }
 
-  }
-
-  var temp = [];
-  var lab = [];
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-  getData(db)
-
-
-      
-
-
-      $(function () {
-
-'use strict';
+  
 var data = {
   labels: lab,
   datasets: [{
@@ -334,9 +320,16 @@ if ($("#lineChart").length) {
 }
 
 
+  }
+
+  var temp = [];
+  var lab = [];
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  getData(db)
 
 
-});
+    
     </script>
 
 </body>

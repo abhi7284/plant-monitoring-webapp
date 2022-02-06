@@ -254,21 +254,7 @@
     lab.push(y);
   }
 
-
-
-  }
-
-  
-  var moisture = [];
-  var lab = [];
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-  getData(db)
-
-      $(function () {
-
-        'use strict';
-        var data = {
+  var data = {
           labels: lab,
           datasets: [{
             label: '# of Moisture',
@@ -331,6 +317,22 @@
             options: options
           });
         }
+
+
+
+  }
+
+  
+  var moisture = [];
+  var lab = [];
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  getData(db)
+
+      $(function () {
+
+        'use strict';
+       
 
 
         
