@@ -20,6 +20,24 @@
   <link rel="stylesheet" href="css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
+
+
+  <style>
+    @media (max-width: 767px) {
+      .disable-padding {
+        padding: 0.2em 0.2em !important;
+      }
+
+      .enable-padding {
+        padding: 1.4em 1.4em !important;
+        
+      }
+      .enable-margin{
+        margin: 8px 0px;
+      }
+    
+    }
+  </style>
 </head>
 
 <body>
@@ -108,9 +126,9 @@
         </ul>
       </nav>
       <!-- partial -->
-      <div class="main-panel">
-        <div class="content-wrapper">
-          <div class="row">
+      <div class="main-panel ">
+        <div class="content-wrapper disable-padding ">
+          <div class="row enable-padding ">
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
@@ -143,7 +161,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 order-md-2 order-1">
+            <div class="col-md-4 order-md-2 order-1 enable-margin">
               <div class="card">
                 <div class="card-body">
                   Line Chart details
@@ -154,7 +172,7 @@
           </div>
 
           <div class="row m-2">
-            <div class="col-md-4">
+            <div class="col-md-4 enable-margin">
               <div class="card">
                 <div class="card-body">
 
