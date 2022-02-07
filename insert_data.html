@@ -2,102 +2,111 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Add Data</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="vendors/feather/feather.css">
-    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
-    <!-- endinject -->
-    <link rel="shortcut icon" href="images/favicon.png" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Add Data</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 
 <body>
-    <div class=" container-scroller">
-        <div class="container-fluid page-body-wrapper full-page-wrapper">
-          <div class="main-panel w-100  documentation">
-            <div class="content-wrapper">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-12 pt-4 pb-3">
-                    <a class="btn btn-primary" href="./index.html"><i class="ti-home mr-2"></i>Back to home</a>
+  <div class=" container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="main-panel w-100  documentation">
+        <div class="content-wrapper">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 pt-4 pb-3">
+                <a class="btn btn-primary" href="./index.html"><i class="ti-home mr-2"></i>Back to home</a>
+              </div>
+
+              <div class="container d-flex justify-content-center text-align-center">
+
+                <div class="p-5 border rounded ">
+                  <div class="form-group">
+                    <h3>Insert Data Manually </h3>
+                    <h5>(For Testing Purpose)</h5>
                   </div>
 
-                  <div class="container d-flex justify-content-center text-align-center">
-                   
-                        <div class="p-5 border rounded ">
-                            <div class="form-group">
-                                <h3>Insert Data Manually </h3> <h5>(For Testing Purpose)</h5>
-                            </div>
-            
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Humidity" id="humidity" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Temperature" id="temperature" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Moisture" id="moisture" required>
-                                </div>
-                                <div class="form-group text-center">
-                                    <button id="submit" class="btn btn-primary mx-auto">Submit</button>
-                                </div>  
-                        
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Humidity" id="humidity"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                        required="required" maxlength="4">
                     </div>
-            
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Temperature" id="temperature"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                        required="required" maxlength="4">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Moisture" id="moisture"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                        required="required" maxlength="4">
+                    </div>
+                    <div class="form-group text-center">
+                      <button id="submit" class="btn btn-primary mx-auto">Submit</button>
+                    </div>
+                  </form>
+
                 </div>
-                </div>
-    
+
               </div>
             </div>
+
           </div>
-          <!-- partial -->
         </div>
       </div>
-      </div>
-
-
-   
-
-
-    <!-- plugins:js -->
-    <script src="vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="vendors/chart.js/Chart.min.js"></script>
-    <script src="vendors/datatables.net/jquery.dataTables.js"></script>
-    <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-    <script src="js/dataTables.select.min.js"></script>
-
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="js/off-canvas.js"></script>
-    <script src="js/hoverable-collapse.js"></script>
-    <script src="js/template.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page-->
-    <script src="js/dashboard.js"></script>
-    <script src="js/Chart.roundedBarCharts.js"></script>
-    <!-- End custom js for this page-->
+      <!-- partial -->
+    </div>
+  </div>
+  </div>
 
 
 
 
 
-    <script type="module">
-        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js';
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+
+
+
+
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js';
     import { getFirestore, collection, getDocs,doc, setDoc } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore-lite.js';
     
 
@@ -137,13 +146,20 @@
         await setDoc(doc(db, "status", random_id), data);
 };
 
-
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
+
     $("#submit").on("click", () => {
+
+       if($("#humidity").val()=="" || $("#temperature").val()=="" || $("#moisture").val()==""){
+         
+         }
+        else{
         setData(db);
         alert("inserted!!")
         reset()
+      }   
+        
         });
 
    
